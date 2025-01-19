@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <ctype.h>
 int main() {
-    int a;
+    int a,b;
     scanf("%d", &a);
-    printf("Hexadecimal: toupper(%x)\n", a);
+    printf("Hexadecimal: %x\n", toUpper(a));
     printf("Octal: %o", a);
     return 0;
 }
