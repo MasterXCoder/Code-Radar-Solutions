@@ -2,9 +2,9 @@
 
 int main() {
     const PI = 3.14;
-    float r, area;
-    scanf("%f",&r);
+    double r, area;
+    scanf("%lf",&r);
     area = PI * r * r;
-    printf("Area: %.2f", area);
+    printf("Area: %.2lf", area);
     return 0;
 }
