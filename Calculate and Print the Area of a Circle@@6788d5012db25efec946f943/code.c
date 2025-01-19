@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    const PI = 3.14;
+    const double PI = 3.14;
     double r, area;
     scanf("%lf",&r);
     area = PI * r * r;
