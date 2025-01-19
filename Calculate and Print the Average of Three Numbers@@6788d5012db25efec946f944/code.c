@@ -2,7 +2,7 @@
 
 int main() {
     float a, b, c, d;
-    scanf("%d %d %d", &a, &b, &c);
+    scanf("%f %f %f", &a, &b, &c);
     d = (a+b+c)/3.0;
     printf("Average: %.2f", d);
     return 0;
