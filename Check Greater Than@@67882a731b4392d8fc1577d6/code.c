@@ -2,9 +2,12 @@
 
 int main() {
     int a, b;
-    bool c;
     scanf("%d %d", &a, &b);
-    c = a>b;
-    printf("%s", c);
+    if(a>b){
+        printf("True");
+    }
+    else{
+    printf("False");
+    }
     return 0;
 }
