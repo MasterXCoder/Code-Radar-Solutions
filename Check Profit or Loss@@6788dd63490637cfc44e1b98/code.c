@@ -5,7 +5,7 @@ int main() {
     char res[20];
     scanf("%d %d", &a, &b);
     res = (a>b)? "Profit":
-          (a==b)? "No Profit No Loss":"Loss";
+          ((a==b)? "No Profit No Loss":"Loss");
     printf("%s", res);
     return 0;
 }
