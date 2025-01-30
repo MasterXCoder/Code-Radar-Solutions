@@ -3,9 +3,12 @@
 
 int main() {
     int a;
-    char s[15];
     scanf("%d", &a);
-    s = (a>=18)? "Eligible" : "Not Eligible";
-    printf("%s", s);
+    if(a>=18){
+        printf("Eligible");
+    }
+    else{
+        printf("Not Eligible")
+    }
     return 0;
 }
