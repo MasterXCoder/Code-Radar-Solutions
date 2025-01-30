@@ -3,6 +3,7 @@
 int main() {
     int a;
     char s;
+    scanf("%d",&a);
     s = (a>=90)? 'A':
         (a>=80)? 'B':
         (a>=70)? 'C':
