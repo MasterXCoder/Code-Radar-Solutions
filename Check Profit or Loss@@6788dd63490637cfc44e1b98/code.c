@@ -12,6 +12,5 @@ int main() {
     else{
         printf("Loss");
     }
-    printf("%s", res);
     return 0;
 }
