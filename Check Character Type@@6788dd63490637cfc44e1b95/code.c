@@ -13,10 +13,10 @@ int main() {
         }
     }
     else if(isalnum(a)){
-        printf("Digit");
+        printf("");
     }
     else{
-        printf("Special Character");
+        printf("");
     }
     return 0;
 }
