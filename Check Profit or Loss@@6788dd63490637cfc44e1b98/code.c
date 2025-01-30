@@ -2,7 +2,7 @@
 
 int main() {
     int a, b;
-    char res[30];
+    char res[100];
     scanf("%d %d", &a, &b);
     res = (a>b)? "Profit":
           ((a==b)? "No Profit No Loss":"Loss");
