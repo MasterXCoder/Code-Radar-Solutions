@@ -2,10 +2,16 @@
 
 int main() {
     int a, b;
-    char res[25];
     scanf("%d %d", &a, &b);
-    res = (a>b)? "Profit":
-          ((a==b)? "No Profit No Loss":"Loss");
+    if(a>b){
+        printf("Profit")
+    }
+    else if(a==b){
+        printf("No Profit No Loss");
+    }
+    else{
+        printf("Loss");
+    }
     printf("%s", res);
     return 0;
 }
