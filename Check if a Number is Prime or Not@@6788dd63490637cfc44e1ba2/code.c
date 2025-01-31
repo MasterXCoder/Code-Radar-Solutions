@@ -2,7 +2,7 @@
 
 int main() {
     int a;
-    static int count = 1;
+    static int count = 0;
     scanf("%d",&a);
     for(int i=1; i<=a; i++){
         if(a%2==0){
