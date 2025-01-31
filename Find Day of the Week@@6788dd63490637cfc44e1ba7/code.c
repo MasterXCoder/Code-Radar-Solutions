@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-typedef enum {Monday=1,Tuesday,Wednesday,Thursday,Friday,Saturday} day;
+typedef enum {Monday=1,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday} day;
 
 void res(day a){
     switch(a){
@@ -22,6 +22,8 @@ void res(day a){
         case Saturday;
             printf("Saturday");
             break;
+        case Sunday:
+            printf("Sunday");
         default:
             printf("Invalid");
             break;
