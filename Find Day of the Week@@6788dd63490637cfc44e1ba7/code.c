@@ -16,7 +16,7 @@ void res(day a){
         case Thursday:
             printf("Thursday");
             break;
-        case Friday;
+        case Friday:
             printf("Friday");
             break;
         case Saturday;
