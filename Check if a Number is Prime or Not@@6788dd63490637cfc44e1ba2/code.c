@@ -4,7 +4,7 @@ int main() {
     int a;
     static int count=0;
     scanf("%d",&a);
-    for(int i=1a; i<=a; i++){
+    for(int i=1; i<=a; i++){
         count++;
     }
     if(a>0 && count==2){
