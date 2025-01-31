@@ -29,8 +29,8 @@ void res(int a){
 }
 int main() {
     int a;
-    sacnf("%d", &a);
-    day z = day(a);
+    scanf("%d", &a);
+    day z = (day)a;
     res(z);
     return 0;
 }
