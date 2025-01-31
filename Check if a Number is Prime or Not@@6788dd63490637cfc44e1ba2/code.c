@@ -4,8 +4,8 @@ int main() {
     int a;
     static int count=0;
     scanf("%d",&a);
-    for(int i=a; i>0; i--){
-        count+=1;
+    for(int i=1a; i<=a; i++){
+        count++;
     }
     if(a>0 && count==2){
         printf("Prime");
