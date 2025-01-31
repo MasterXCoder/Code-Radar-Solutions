@@ -2,8 +2,8 @@
 
 typedef enum {Monday=1,Tuesday,Wednesday,Thursday,Friday,Saturday} day;
 
-void res(int a){
-    switch(day){
+void res(day a){
+    switch(a){
         case Monday:
             printf("Monday");
             break;
