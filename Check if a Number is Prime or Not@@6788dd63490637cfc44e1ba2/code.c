@@ -2,9 +2,9 @@
 
 int main() {
     int a;
-    static int count;
+    static int count=0;
     scanf("%d",&a);
-    for(int i=a, i>0, i--){
+    for(int i=a; i>0; i--){
         count+=1;
     }
     if(count>2){
