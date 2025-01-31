@@ -32,7 +32,7 @@ void res(day a){
 int main() {
     int a;
     scanf("%d", &a);
-    day z = (day)a;
+    day z = day(a);
     res(z);
     return 0;
 }
