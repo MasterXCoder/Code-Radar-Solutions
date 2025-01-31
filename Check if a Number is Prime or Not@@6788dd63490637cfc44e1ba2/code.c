@@ -6,7 +6,7 @@ int main() {
     scanf("%d",&a);
     for(int i=1; i<=a; i++){
         if(a%2==0){
-            count++
+            count++;
         }
     }
     if(a>0 && count==2){
