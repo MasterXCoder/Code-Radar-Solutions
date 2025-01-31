@@ -30,6 +30,7 @@ void res(int a){
 int main() {
     int a;
     sacnf("%d", &a);
-    res(a);
+    day z = a;
+    res(z);
     return 0;
 }
