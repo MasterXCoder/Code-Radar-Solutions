@@ -17,7 +17,7 @@ int main() {
         printf("%.0f",a/b);
     }
     else{
-        printf("Invalid");
+        printf("error");
     }
     return 0;
 }
