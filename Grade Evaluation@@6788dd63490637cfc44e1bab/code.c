@@ -19,5 +19,8 @@ int main() {
     else if(s==a[4]){
         printf("Fail");
     }
+    else{
+        printf("Invalid grade");
+    }
     return 0;
 }
