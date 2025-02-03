@@ -1,38 +1,31 @@
 #include <stdio.h>
 
-typedef enum {Monday = 1,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday} day;
-
-void res(day a){
-    switch(a){
-        case Monday:
-            printf("Monday");
-            break;
-        case Tuesday:
-            printf("Tuesday");
-            break;
-        case Wednesday:
-            printf("Wednesday");
-            break;
-        case Thursday:
-            printf("Thursday");
-            break;
-        case Friday:
-            printf("Friday");
-            break;
-        case Saturday;
-            printf("Saturday");
-            break;
-        case Sunday:
-            printf("Sunday");
-        default:
-            printf("Invalid");
-            break;
-    }
-}
 int main() {
     int a;
     scanf("%d", &a);
-    day z = day(a);
-    res(z);
+    if(a==1){
+        printf("Monday");
+    }
+    else if(a==2){
+        printf("Tuesday");
+    }
+    else if(a==3){
+        printf("Wednesday");
+    }
+    else if(a==4){
+        printf("Thursday");
+    }
+    else if(a==5){
+        printf("Friday");
+    }
+    else if(a==6){
+        printf("Saturday");
+    }
+    else if(a==7){
+        printf("Sunday");
+    }
+    else{
+        printf("Invalid");
+    }
     return 0;
 }
