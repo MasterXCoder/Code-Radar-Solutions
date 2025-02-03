@@ -14,7 +14,10 @@ int main() {
         printf("%d", a*b);
     }
     else if(s=='/'){
-        printf("%d",a/b)
+        printf("%d",a/b);
+    }
+    else{
+        printf("Invalid");
     }
     return 0;
 }
