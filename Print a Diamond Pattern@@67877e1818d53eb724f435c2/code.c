@@ -10,7 +10,7 @@ int main() {
         printf("\n");
     }
     for(int i=0; i<a; i++){
-        for(int k=(2*i+1); k>0; k-=2){
+        for(int k=(2*i+1); k>0; k--){
             printf("*");
         }
         printf("\n");
