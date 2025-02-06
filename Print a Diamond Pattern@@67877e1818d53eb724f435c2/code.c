@@ -12,14 +12,6 @@ int main() {
         }
         printf("\n");
     }
-    for(int i=a; i>0; i-=2){
-        for(int s=(a-i+1); s>0; s--){
-            printf(" ");
-        }
-        for(int k=i; k>0; k--){
-            printf("*");
-        }
-        printf("\n");
-    }
+
     return 0;
 }
