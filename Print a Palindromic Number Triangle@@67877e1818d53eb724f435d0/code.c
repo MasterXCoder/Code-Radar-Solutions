@@ -12,6 +12,7 @@ int main() {
             for(int r=1; r<(k+1); r++){
                 printf("%d ",r);
             }
+            printf("\n");
         }
         printf("\n");
     }
