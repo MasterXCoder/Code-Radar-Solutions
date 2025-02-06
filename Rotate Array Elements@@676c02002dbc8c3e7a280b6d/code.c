@@ -4,11 +4,12 @@ int main() {
     int n,r;
     int arr[n];
     scanf("%d", &n);
-    printf("\n");
     for(int i=0; i<n; i--){
         scanf("%d", &arr[i]);
     }
     scanf("%d", &r);
-    printf("%d ", arr[0]);
+    for(int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
     return 0;
 }
