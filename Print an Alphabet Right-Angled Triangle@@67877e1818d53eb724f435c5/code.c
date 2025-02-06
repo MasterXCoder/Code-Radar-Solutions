@@ -7,6 +7,7 @@ int main() {
         for(int j=0; j<i; j++){
             printf("%c ",65+j);
         }
+        printf("\n");
     }
     return 0;
 }
