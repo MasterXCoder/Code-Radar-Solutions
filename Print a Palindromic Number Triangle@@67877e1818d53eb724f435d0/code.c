@@ -9,10 +9,7 @@ int main() {
             printf(" ");
         }
         for(int k=(2*i+1); k>0; k--){
-            for(int r=1; r<(k+1); r++){
-                printf("%d ",r);
-            }
-            printf("\n");
+            printf("*")
         }
         printf("\n");
     }
