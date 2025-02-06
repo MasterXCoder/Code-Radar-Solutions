@@ -8,8 +8,15 @@ int main() {
         scanf("%d", &arr[i]);
     }
     scanf("%d", &r);
-    for(int i = r; i < n; i++) {
+    if(r>0){
+        for(int i = r; i < n; i++) {
         printf("%d ", arr[i]);
     }
+        for(int i = (a-r); i < r; i++){
+            printf("%d ", arr[i]);
+        }
+
+    }
+    
     return 0;
 }
