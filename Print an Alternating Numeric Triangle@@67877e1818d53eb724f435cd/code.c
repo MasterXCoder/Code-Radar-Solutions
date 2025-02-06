@@ -7,20 +7,20 @@ int main() {
         if(i%2==0){
             for(int j=0; j<i; j++){
                 if(j%2==0){
-                    printf("%d ",1);
+                    printf("%d ",0);
                 }
                 else{
-                    printf("%d ",0);
+                    printf("%d ",1);
                 }
             } 
         }
         else{
             for(int j=0; j<i; j++){
                 if(j%2==0){
-                    printf("%d ",0);
+                    printf("%d ",1);
                 }
                 else{
-                    printf("%d ",1);
+                    printf("%d ",0);
                 }
             }             
         }
