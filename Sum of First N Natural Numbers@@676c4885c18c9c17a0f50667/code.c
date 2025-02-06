@@ -7,6 +7,6 @@ int main() {
     for(int a=1; i<(a+1); i++){
         b+=i;
     }
-    printf("%d",b)
+    printf("%d",b);
     return 0;
 }
