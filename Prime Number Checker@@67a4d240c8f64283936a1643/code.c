@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int isPrime(int a) {
-    static int count = 0;
+    int count = 0;  // Reset count to 0 each time the function is called
     for(int i=1; i<=a; i++){
         if(a%i==0){
             count++;
@@ -14,6 +14,7 @@ int isPrime(int a) {
         return 0;
     }
 }
+
 int main(){
     int t;
     scanf("%d",&t);
