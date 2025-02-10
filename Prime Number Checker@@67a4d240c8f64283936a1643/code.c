@@ -2,22 +2,20 @@
 
 int isPrime(int a) {
     if (a <= 1) return 0;  // Numbers less than 2 are not prime
-    int count = 0;         // Reset count to 0 each time the function is called
-    for (int i = 1; i <= a; i++) {
-        if (a % i == 0) {
-            count++;
-        }
+    for (int i = 2; i < a; i++) {
+        if (a % i == 0) return 0;
     }
-    return (count == 2) ? 1 : 0; // A prime number has exactly two divisors
+    return 1;
 }
 
 int main() {
     int t;
     scanf("%d", &t);
-    while (t--) {
+    for (int i = 0; i < t; i++) {
         int num;
         scanf("%d", &num);
         printf("%d\n", isPrime(num));
     }
     return 0;
 }
+
