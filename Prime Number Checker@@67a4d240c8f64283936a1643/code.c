@@ -1,21 +1,31 @@
 #include <stdio.h>
 
 int isPrime(int a) {
-    if (a <= 1) return 0;  // Numbers less than 2 are not prime
-    for (int i = 2; i < a; i++) {
-        if (a % i == 0) return 0;
+    int count = 0; 
+    for(int i=1; i<=a; i++){
+        if(a%i==0){
+            count++;
+        }
     }
-    return 1;
+    if(count==2){
+        return 1;
+    }
+    else{
+        return 0;
+    }
 }
 
-int main() {
+int main(){
     int t;
-    scanf("%d", &t);
-    for (int i = 0; i < t; i++) {
+    scanf("%d",&t);
+    int arr[t];
+    while(t--){
         int num;
-        scanf("%d", &num);
+        scanf("%d", &arr[&num]);
+    }
+    whilt(t++){
+        int z = arr[t];
         printf("%d\n", isPrime(num));
     }
     return 0;
 }
-
