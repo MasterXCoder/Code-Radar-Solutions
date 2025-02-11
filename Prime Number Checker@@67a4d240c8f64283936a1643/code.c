@@ -22,9 +22,9 @@ int main(){
     int arr[a];
     while(t--){
         int num;
-        int a=0;
-        scanf("%d", &arr[a]);
-        a++;
+        int b=0;
+        scanf("%d", &arr[b]);
+        b++;
     }
     t=a;
     while(t--){
