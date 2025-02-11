@@ -16,16 +16,20 @@ int isPrime(int a) {
 }
 
 int main(){
-    int t;
+    int a,t;
     scanf("%d",&t);
-    int arr[t];
+    a=t;
+    int arr[a];
     while(t--){
         int num;
-        scanf("%d", &arr[&num]);
+        int a=0;
+        scanf("%d", &arr[a]);
+        a++;
     }
-    whilt(t++){
-        int z = arr[t];
-        printf("%d\n", isPrime(num));
+    t=a;
+    while(t--){
+        int z = arr[a-t];
+        printf("%d\n", isPrime(z));
     }
     return 0;
 }
