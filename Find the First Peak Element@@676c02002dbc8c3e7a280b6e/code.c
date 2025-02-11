@@ -1,10 +1,31 @@
 #include <stdio.h>
 
-char* welcome() {
-    return "Welcome to Code Radar!";
-}
-
 int main() {
-    printf("%s", welcome());
+    int n,a;
+    scanf("%d", &n);
+    int arr[n];
+    for(int i=0; i<n; i++){
+        scanf("%d", &arr[i]);
+    }
+    for(int i=0; i<n; i++){
+        if(a>0){
+            break;
+        }
+        for(int j=0; j<n-i-1; j++){
+            if(arr[j]>arr[j+1] && arr[j]>arr[j-1]){
+                a=arr[j];
+                break;
+            }
+            else{
+                a=0;
+            }
+        }
+    }
+    if(a>0){
+        printf("%d",a);
+    }
+    else{
+        printf("%d", -1);
+    }
     return 0;
 }
