@@ -11,15 +11,16 @@ void bubbleSort(int arr[], int n) {
             }
         }
     }
+    return arr[];
 }
 
 int main(){
-    int n;
+    int n,a;
     scanf("%d", &n);
     int arr[n];
     for(int i=0; i<n; i++){
         scanf("%d", &arr[i]);
     } 
-    bubbleSort(arr[], n);
-    printf("%d %d", arr[0], arr[n-1]);
+    a=bubbleSort(arr[], n);
+    printf("%d %d", a[0], a[n-1]);
 }
