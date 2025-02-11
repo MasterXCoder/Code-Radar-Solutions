@@ -16,12 +16,10 @@ int isPrime(int a) {
 
 int main() {
     int t;
-    printf("Enter the number of test cases: ");
     scanf("%d", &t);
     int arr[t];
     
     for (int i = 0; i < t; i++) {
-        printf("Enter number %d: ", i + 1);
         scanf("%d", &arr[i]);
     }
     
