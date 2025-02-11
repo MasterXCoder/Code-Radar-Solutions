@@ -10,10 +10,10 @@ int main() {
     scanf("%d", &r);
     if(r>0){
         for(int i = r+1; i < n; i++) {
-            printf("%d ", arr[i]);
+            printf("%d\n", arr[i]);
         }
         for(int i = 0; i <= r; i++){
-            printf("%d ", arr[i]);
+            printf("%d\n", arr[i]);
         }
 
     }
