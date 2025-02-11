@@ -7,7 +7,8 @@ int main(){
     for(int i=0; i<n; i++){
         scanf("%d", &arr[i]);
     }
-    int e,o = 0,0;
+    int e = 0;
+    int o = 0;
     for(int j=0; j<n; j++){
         if(arr[j]%2==0){
             e++;
