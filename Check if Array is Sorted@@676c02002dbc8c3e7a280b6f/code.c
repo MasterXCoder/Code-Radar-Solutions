@@ -11,7 +11,7 @@ int main() {
         if(a>0){
             break;
         }
-        for(int j=0; j<n-i; j++){
+        for(int j=i; j<n-i; j++){
             if(arr[j]>arr[j+1]){
                 a=1;
                 break;
