@@ -21,11 +21,17 @@ int main(){
         scanf("%d", &arr[i]);
     } 
     bubbleSort(arr, n);
-    if(arr[n-2]==arr[n-1] || n==1){
-        printf("%d", -1);
+    int largest = arr[n - 1];
+    int secondLargest = -1;
+    
+    // Find the second largest by checking from second-last to first
+    for (int i = n - 2; i >= 0; i--) {
+        if (arr[i] < largest) {
+            secondLargest = arr[i];
+            break;
+        }
     }
-    else{
-        printf("%d", arr[n-2]);
-    }
+
+    printf("%d", secondLargest);
     return 0;
 }
