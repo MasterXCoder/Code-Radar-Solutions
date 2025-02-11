@@ -21,6 +21,11 @@ int main(){
         scanf("%d", &arr[i]);
     } 
     bubbleSort(arr, n);
-    printf("%d", arr[n-2]);
+    if(arr[n-2]!<arr[n-1]){
+        printf("%d", -1);
+    }
+    else{
+          printf("%d", arr[n-2]);
+    }
     return 0;
 }
