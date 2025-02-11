@@ -13,7 +13,7 @@ int main(){
             e++;
         }
         else{
-            o++
+            o++;
         }
     } 
     printf("%d %d", e, o);
