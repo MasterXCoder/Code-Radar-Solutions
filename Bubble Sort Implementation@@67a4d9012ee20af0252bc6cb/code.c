@@ -10,6 +10,7 @@ void bubbleSort(arr, n){
                 arr[j+1]=t;
             }
         }
+    return arr;
 }}
 
 int printArray(arr, n){
