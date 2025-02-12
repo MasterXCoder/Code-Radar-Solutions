@@ -17,6 +17,15 @@ int main() {
         }
 
     }
+    else{
+        r=r%n;
+        for(int i = n-r; i < n; i++) {
+            printf("%d ", arr[i]);
+        }
+        for(int i = 0; i < n-r; i++){
+            printf("%d ", arr[i]);
+        }
+    }
     
     return 0;
 }
