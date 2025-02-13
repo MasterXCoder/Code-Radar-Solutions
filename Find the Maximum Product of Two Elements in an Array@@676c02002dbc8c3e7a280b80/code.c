@@ -21,6 +21,6 @@ int main(){
         scanf("%d", &arr[i]);
     } 
     bubbleSort(arr, n);
-    printf("%d", arr[0]*arr[n-1]);
+    printf("%d", arr[n-2]*arr[n-1]);
     return 0;
 }
