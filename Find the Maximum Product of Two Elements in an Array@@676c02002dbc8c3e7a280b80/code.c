@@ -20,7 +20,7 @@ int main(){
     int arr[n];
     for(int i=0; i<n; i++){
         scanf("%d", &arr[i]);
-        abs(&arr[i]);
+        arr[i] = abs(arr[i]);
     } 
     bubbleSort(arr, n);
     printf("%d", arr[n-2]*arr[n-1]);
