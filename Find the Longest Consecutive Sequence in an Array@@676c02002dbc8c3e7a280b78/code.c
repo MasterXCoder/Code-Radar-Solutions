@@ -22,12 +22,12 @@ int main(){
         scanf("%d", &arr[i]);
     }
     bubbleSort(arr,a);
-    for(int j=0; j<a-1; j++){
+    for(int j=0; j<a; j++){
         if(arr[0]>arr[j+1]){
             c++;
         }
     }
-    print("%d", c);
+    printf("%d", c);
     retutn 0;
 }
 
