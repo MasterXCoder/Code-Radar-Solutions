@@ -23,7 +23,7 @@ int main(){
     }
     bubbleSort(arr,a);
     for(int j=0; j<a; j++){
-        if(arr[0]>arr[j+1]){
+        if(arr[0]<arr[j+1]){
             c++;
         }
     }
