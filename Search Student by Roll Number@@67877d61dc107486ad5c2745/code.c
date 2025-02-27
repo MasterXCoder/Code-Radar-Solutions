@@ -15,11 +15,10 @@ int main(){
     int check;
     scanf("%d",&check);
     if(s[check]){
-        printf("Roll Number: %d, Name: %s, Marks: %.2f",s[i].roll,s[i].name,s[i].mark);
+        printf("Roll Number: %d, Name: %s, Marks: %.2f",s[check].roll,s[check].name,s[check].mark);
     }
     else{
         printf("Student not found");
     }
-    printf("Average Marks: %.2f",avg/n);
     return 0;
 }
