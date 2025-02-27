@@ -16,6 +16,6 @@ int main(){
     for(int i=0; i<n; i++){
         avg+=s[i].mark;
     }
-    printf("Average Marks: %.2f",avg);
+    printf("Average Marks: %.2f",avg/n);
     return 0;
 }
