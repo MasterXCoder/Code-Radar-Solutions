@@ -20,8 +20,6 @@ int main(){
         return 0;
     }
     }
-    else{
-        printf("Student not found");
-    }
+    printf("Student not found");
     return 0;
 }
