@@ -12,14 +12,14 @@ int main(){
     for(int i=0; i<n; i++){
         scanf("%d %s %f",&s[i].roll,&s[i].name,&s[i].mark);
     }
-    float x,count;
-    count=0;
+    float x;
+    int count=0;
     scanf("%f",&x);
     for(int i=0; i<n; i++){
         if(s[i].mark>x){
             count+=1;
         }
     }
-    printf("Count of students scoring above %.2f: %.0f\n",x,count);
+    printf("Count of students scoring above %.2f: %d\n",x,count);
     return 0;
 }
