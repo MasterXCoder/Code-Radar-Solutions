@@ -14,8 +14,11 @@ int main(){
     }
     int check;
     scanf("%d",&check);
-    if(s[check]){
+    for(int i=0; i<n; i++){
+        if(s[check].rool==s[i].roll){
         printf("Roll Number: %d, Name: %s, Marks: %.2f",s[check].roll,s[check].name,s[check].mark);
+        return 0;
+    }
     }
     else{
         printf("Student not found");
