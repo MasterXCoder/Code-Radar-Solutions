@@ -17,7 +17,7 @@ int main(){
     scanf("%d",&check);
     for(int i=0; i<n; i++){
         if(s[check].roll==s[i].roll){
-        printf("Roll Number: %d, Name: %s, Marks: %.2f",s[check].roll,s[check].name,s[check].mark);
+        printf("Roll Number: %d, Name: %s, Marks: %.2f",s[i].roll,s[i].name,s[i].mark);
         r = 1;
         }
     }
