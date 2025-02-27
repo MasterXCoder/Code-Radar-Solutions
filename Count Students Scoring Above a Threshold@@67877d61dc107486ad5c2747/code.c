@@ -12,7 +12,8 @@ int main(){
     for(int i=0; i<n; i++){
         scanf("%d %s %f",&s[i].roll,&s[i].name,&s[i].mark);
     }
-    float x,count=0;
+    float x,count;
+    count=0;
     scanf("%f",&x);
     for(int i=0; i<n; i++){
         if(s[i].mark>x){
