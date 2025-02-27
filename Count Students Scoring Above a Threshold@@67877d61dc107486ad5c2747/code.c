@@ -15,7 +15,7 @@ int main(){
     float x,count=0;
     scanf("%f",&x);
     for(int i=0; i<n; i++){
-        if(s[i].marks>x){
+        if(s[i].mark>x){
             count+=1;
         }
     }
