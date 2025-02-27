@@ -5,7 +5,7 @@ int main(){
         int roll;
         char name[25];
         float mark;
-    }
+    };
     int n;
     scanf("%d",&n);
     struct prog s[n];
