@@ -4,10 +4,10 @@ void bubbleSort(int s[], int n) {
     int t;
     for (int i = 0; i < n-1; i++) {
         for (int j = 0; j < n-i-1; j++) {
-            if (s.mark[j] > s.mark[j+1]) {
-                t = s.mark[j];
-                s.mark[j] = s.mark[j+1];
-                s.mark[j+1] = t;
+            if (s[j].mark > s[j+1].mark) {
+                t = s[j].mark;
+                s[j].mark = s[j+1].mark;
+                s[j+1].mark = t;
             }
         }
     }
@@ -28,6 +28,7 @@ int main(){
     int check;
     int r = 0; 
     scanf("%d",&check);
+
     for(int i=0; i<n; i++){
         printf("%d %s %f",&s[i].roll,&s[i].name,&s[i].mark);
     }
