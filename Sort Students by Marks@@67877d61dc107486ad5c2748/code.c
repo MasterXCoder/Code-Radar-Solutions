@@ -21,7 +21,6 @@ void bubbleSort(struct data s[], int n) {
 
 int main() {
     int n;
-    printf("Enter the number of students: ");
     scanf("%d", &n);
 
     struct data s[n];
@@ -31,7 +30,7 @@ int main() {
 
     bubbleSort(s, n);
 
-    for (int i = 0; i < n; i++) {
+    for (int i = n; i >=0; i--) {
         printf("Roll Number: %d, Name: %s, MArks: %.2f\n", s[i].roll, s[i].name, s[i].mark);
     }
 
