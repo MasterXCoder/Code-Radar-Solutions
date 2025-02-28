@@ -19,7 +19,7 @@ int btm = 0;
         }
     }
 
-    printf("Student with Minimum Marks: Roll Number: %d, Name: %s, Marks: %.2f\n", s[top].roll, s[top].name, s[top].mark);
+    printf("Student with Minimum Marks: Roll Number: %d, Name: %s, Marks: %.2f\n", s[btm].roll, s[btm].name, s[btm].mark);
 
     return 0;
 
