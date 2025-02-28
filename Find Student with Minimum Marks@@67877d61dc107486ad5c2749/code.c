@@ -12,7 +12,7 @@ int main(){
     for(int i=0; i<n; i++){
         scanf("%d %s %f", &s[i].roll, &s[i].name, &s[i].mark);
     }
-int top = 0;
+int btm = 0;
     for(int i = 1; i < n; i++) {
         if(s[i].mark < s[btm].mark) {
             btm = i;
