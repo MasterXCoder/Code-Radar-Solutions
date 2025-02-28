@@ -28,7 +28,7 @@ int main(){
     int check;
     int r = 0; 
     scanf("%d",&check);
-
+    bubbleSort(s[], n);
     for(int i=0; i<n; i++){
         printf("%d %s %f",&s[i].roll,&s[i].name,&s[i].mark);
     }
