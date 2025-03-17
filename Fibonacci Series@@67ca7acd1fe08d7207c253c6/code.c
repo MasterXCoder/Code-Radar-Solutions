@@ -7,6 +7,6 @@ int fibonacciSeries(int n){
         f=f1+f2;
         f2=f1;
         f1=f;
-        fibo(n-1);
+        fibonacciSeries(n-1);
     }
 }
