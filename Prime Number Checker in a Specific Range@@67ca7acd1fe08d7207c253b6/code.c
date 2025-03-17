@@ -1,5 +1,5 @@
 int printPrimesInRange(int a,int b){
-    int count,a=0;
+    int count,n=0;
     for(int i=a; i<b; i++){
         count=0;
         for(int j=2; j<=i; j++){
@@ -8,7 +8,7 @@ int printPrimesInRange(int a,int b){
             }
         }
         if(count==1){
-            a++;
+            n++;
             printf("%d ",i);
         }
     }
