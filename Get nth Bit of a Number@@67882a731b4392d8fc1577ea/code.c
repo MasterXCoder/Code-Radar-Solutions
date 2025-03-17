@@ -1,9 +1,9 @@
 #include <stdio.h>
-#define bits sizeof(int)*8;
+#define BITS sizeof(int)*8;
 int main(){
     int a,b,c;
     scanf("%d %d",&a, &b);
-    c = 1<<(bits-b);
+    c = 1<<(BITS-b);
     if(a&c){
         printf("%d",1);
     }
