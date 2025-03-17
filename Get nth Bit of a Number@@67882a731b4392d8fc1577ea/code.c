@@ -4,7 +4,7 @@ int main(){
     int a,b,c;
     scanf("%d %d",&a, &b);
     c = 1<<(bits-b);
-    if(b&a){
+    if(a&c){
         printf("%d",1);
     }
     else{
