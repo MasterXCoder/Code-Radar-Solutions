@@ -18,7 +18,7 @@ int main(){
                 break;
             } 
         }
-        if(unique & arr[r]!=0){
+        if(unique){
             rem[c]=arr[r];
             c++;
         } 
