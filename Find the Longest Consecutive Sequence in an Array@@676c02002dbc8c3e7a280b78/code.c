@@ -37,7 +37,7 @@ int main(){
         }
     }
     bubbleSort(r,c);
-    printf("%d", r[n-1]);
+    printf("%d", r[c-1]);
     return 0;
 }
 
