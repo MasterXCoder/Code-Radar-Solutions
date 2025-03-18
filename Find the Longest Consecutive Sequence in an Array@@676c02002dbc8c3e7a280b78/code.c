@@ -26,7 +26,7 @@ int main(){
     int t=0;
     for(int i=0; i<n; i++){
         for(int j=0; j<=c; j++){
-            if(r[c]==arr[i]+c){
+            if(r[c]==arr[j]+c){
                 c++;
             }
             else{
