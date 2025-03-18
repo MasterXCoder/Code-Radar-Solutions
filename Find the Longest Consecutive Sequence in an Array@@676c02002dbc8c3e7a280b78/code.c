@@ -33,6 +33,7 @@ int main(){
                 r[t]=c;
                 t++;
                 c=0;
+                i=j;
                 break;
             }
         }
