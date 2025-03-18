@@ -24,7 +24,6 @@ int main(){
         }
             
         }
-    }
     for(int i=0; i<c; i++){
         val = 0;
         for(int j=0; j<n; j++){
