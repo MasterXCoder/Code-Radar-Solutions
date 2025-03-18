@@ -12,7 +12,6 @@ int main() {
     int c = 0;
     int unique;
     
-    // Find unique elements
     for (int r = 0; r < n; r++) {
         unique = 1;
         for (int t = 0; t < c; t++) {
@@ -26,8 +25,6 @@ int main() {
             c++;
         }
     }
-    
-    // Find frequencies and check for majority
     for (int i = 0; i < c; i++) {
         val = 0;
         for (int j = 0; j < n; j++) {
@@ -40,8 +37,7 @@ int main() {
             return 0;
         }
     }
-    
-    // No majority element found
+
     printf("-1");
     return 0;
 }
