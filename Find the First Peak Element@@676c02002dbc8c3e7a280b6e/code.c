@@ -25,7 +25,12 @@ int main() {
         printf("%d",a);
     }
     else{
-        printf("%d", -1);
+        if(arr[0]==arr[1]){
+            printf("%d", -1);
+        }
+        else{
+            printf("%d", arr[n]);
+        }
     }
     return 0;
 }
