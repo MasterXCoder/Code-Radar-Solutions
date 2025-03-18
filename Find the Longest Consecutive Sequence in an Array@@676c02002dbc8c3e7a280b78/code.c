@@ -32,6 +32,7 @@ int main(){
             else{
                 r[t]=c;
                 t++;
+                c=0;
                 break;
             }
         }
