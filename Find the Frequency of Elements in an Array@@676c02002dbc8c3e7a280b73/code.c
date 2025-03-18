@@ -9,8 +9,9 @@ int main(){
     }
     int rem[n];
     int c=0;
+    int unique;
     for(int r=0; r<n; r++){
-        int unique = 1;
+        unique = 1;
         for(int t=0; t<n; t++){
             if(rem[t] == arr[r]){
                 unique = 0;
