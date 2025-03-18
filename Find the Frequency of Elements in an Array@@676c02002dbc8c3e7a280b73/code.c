@@ -12,7 +12,7 @@ int main(){
     int unique;
     for(int r=0; r<n; r++){
         unique = 1;
-        for(int t=0; t<n; t++){
+        for(int t=0; t<c; t++){
             if(rem[t] == arr[r]){
                 unique = 0;
                 break;
