@@ -13,9 +13,10 @@ int main(){
         int unique = 1;
         for(int t=0; t<n; t++){
             if(rem[t] == arr[r]){
-                unique=1;
+                unique = 0;
                 break;
-            }
+            } 
+        }
         if(unique){
             rem[c]=arr[r];
             c++;
