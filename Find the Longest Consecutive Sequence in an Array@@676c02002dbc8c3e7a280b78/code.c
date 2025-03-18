@@ -37,7 +37,9 @@ int main(){
         }
     }
     bubbleSort(r,c);
-    printf("%d", r[c-1]);
+    for(int i=0; i<c; i++){
+        printf("%d", r[i]);
+    }
     return 0;
 }
 
