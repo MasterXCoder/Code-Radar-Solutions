@@ -7,14 +7,27 @@ int main(){
     for(int k=0; k<n; k++){
         scanf("%d",&arr[k]);
     }
-    for(int i=0; i<n; i++){
+    int rem[n];
+    int c=0;
+    for(int r=0; r<n; r++){
+        for(int t=0; t<n; t++){
+            if(rem[i] in arr[t]){
+                continue;
+            }
+            else{
+                rem[i]=arr[i];
+                c++;
+            }
+        }
+    }
+    for(int i=0; i<c; i++){
         val = 0;
         for(int j=0; j<n; j++){
-            if(arr[i]==arr[j]){
+            if(rem[i]==arr[j]){
                 val++;
             }
         }
-        printf("%d %d",arr[i],val);
+        printf("%d %d",rem[i],val);
         printf("\n");
     }
     return 0;
