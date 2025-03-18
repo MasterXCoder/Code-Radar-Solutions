@@ -18,11 +18,10 @@ int main(){
                 break;
             } 
         }
-        if(unique){
+        if(unique & arr[r]!=0){
             rem[c]=arr[r];
             c++;
-        }
-            
+        } 
         }
     for(int i=0; i<c; i++){
         val = 0;
