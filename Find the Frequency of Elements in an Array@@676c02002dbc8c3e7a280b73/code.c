@@ -11,11 +11,11 @@ int main(){
     int c=0;
     for(int r=0; r<n; r++){
         for(int t=0; t<n; t++){
-            if(rem[i] in arr[t]){
+            if(rem[r] in arr[t]){
                 continue;
             }
             else{
-                rem[i]=arr[i];
+                rem[r]=arr[t];
                 c++;
             }
         }
