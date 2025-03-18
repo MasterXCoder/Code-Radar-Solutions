@@ -10,14 +10,17 @@ int main(){
     int rem[n];
     int c=0;
     for(int r=0; r<n; r++){
+        int unique = 1;
         for(int t=0; t<n; t++){
-            if(rem[r] in arr[t]){
-                continue;
+            if(rem[t] == arr[r]){
+                unique=1;
+                break;
             }
-            else{
-                rem[r]=arr[t];
-                c++;
-            }
+        if(unique){
+            rem[c]=arr[r];
+            c++;
+        }
+            
         }
     }
     for(int i=0; i<c; i++){
