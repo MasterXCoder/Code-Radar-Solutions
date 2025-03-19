@@ -19,7 +19,7 @@ int main() {
         scanf("%d %s %f", &s[i].id, s[i].name, &s[i].salary);
     }
 
-    for (int i = n; i >=0; i--) {
+    for (int i = 0; i < n; i++) {
         printf("Employee ID: %d, Name: %s, Bonus: %.2f\n", s[i].id, s[i].name, res(s[i].salary));
     }
 
