@@ -7,7 +7,7 @@ struct data {
 };
 
 char res(float mark){
-    mark>=85? 'A':mark>=70? 'B':'C';
+   return mark>=85? 'A':mark>=70? 'B':'C';
 }
 
 int main() {
@@ -20,7 +20,7 @@ int main() {
     }
 
     for (int i = n; i >=0; i--) {
-        printf("Roll Number: %d, Name: %s, MArks: %.2f\n", s[i].roll, s[i].name, res(s[i].mark));
+        printf("Roll Number: %d, Name: %s, Marks: %.2f\n", s[i].roll, s[i].name, res(s[i].mark));
     }
 
     return 0;
