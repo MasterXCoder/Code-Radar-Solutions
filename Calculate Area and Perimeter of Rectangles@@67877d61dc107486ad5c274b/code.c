@@ -15,7 +15,7 @@ int main() {
     }
 
     for (int i = 1; i<=n; i++) {
-        printf("Rectangle %d: Area = %.2f, Perimeter = %.2f", i, (s[i].length*s[i].breadth), (2(s[i].length+s[i].breadth)));
+        printf("Rectangle %d: Area = %.2f, Perimeter = %.2f\n", i, (s[i].length*s[i].breadth), (2*(s[i].length+s[i].breadth)));
     }
 
     return 0;
