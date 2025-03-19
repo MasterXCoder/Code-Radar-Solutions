@@ -20,7 +20,7 @@ int main() {
     }
 
     for (int i = n; i >=0; i--) {
-        printf("Roll Number: %d, Name: %s, MArks: %.2f\n", s[i].roll, s[i].name, char(s[i].mark));
+        printf("Roll Number: %d, Name: %s, MArks: %.2f\n", s[i].roll, s[i].name, res(s[i].mark));
     }
 
     return 0;
