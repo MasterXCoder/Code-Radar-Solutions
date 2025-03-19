@@ -18,6 +18,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         strcmp(s[i].name, "Car") == 0 ? (c += s[i].amt) :
         strcmp(s[i].name, "Truck") == 0 ? (t += s[i].amt) : (b += s[i].amt);
+        printf("%f %f %f\n",c,t,b);
     }
     printf("Cars: %.2f, Trucks: %.2f, Bikes: %.2f\n",c,t,b);
     return 0;
