@@ -17,6 +17,6 @@ int main() {
     for (int i = 0; i < n; i++) {
        s[i].name=="Car"? c++:s[i].name=="Truck"? t++:b++;
     }
-    printf("Cars: %.2f, Trucks: %.2f, Bikes: %.2f\n");
+    printf("Cars: %.2f, Trucks: %.2f, Bikes: %.2f\n",c,t,b);
     return 0;
 }
