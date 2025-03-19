@@ -7,7 +7,7 @@ struct data {
 };
 
 char res(float salary){
-    salary<=5000? ((0.1*salry)+salary):((0.05*salry)+salary);
+    salary<=5000? ((0.1*salary)+salary):((0.05*salary)+salary);
 }
 
 int main() {
