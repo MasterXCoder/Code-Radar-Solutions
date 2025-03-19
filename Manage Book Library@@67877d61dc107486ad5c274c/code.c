@@ -21,6 +21,7 @@ int main() {
        if(s[i].price>val){
             printf("Title: %s, Author: %s, Price: %.2f", s[i].book, s[i].author, s[i].price);
        }
+       printf("a");
     }
     return 0;
 }
