@@ -12,7 +12,7 @@ int main() {
 
     struct data s[n];
     for (int i = 0; i < n; i++) {
-        scanf("%s %s %f", &s[i].book, s[i].author, s[i].price);
+        scanf("%s %s %f", &s[i].book, &s[i].author, &s[i].price);
     }
     float val;
     scanf("%f",&val);
@@ -21,7 +21,6 @@ int main() {
        if(s[i].price>val){
             printf("Title: %s, Author: %s, Price: %.2f", s[i].book, s[i].author, s[i].price);
        }
-       printf("%f",s[i].price);
     }
     return 0;
 }
