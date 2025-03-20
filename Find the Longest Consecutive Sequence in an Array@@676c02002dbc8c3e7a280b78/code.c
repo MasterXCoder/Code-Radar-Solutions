@@ -22,23 +22,6 @@ int main(){
         scanf("%d", &arr[i]);
     }
     bubbleSort(arr,n);
-    int r[n];
-    int t=0;
-    for(int i=0; i<n; i++){
-        for(int j=0; j<=c; j++){
-            if(r[c]==arr[j]+c){
-                c++;
-            }
-            else{
-                r[t]=c;
-                t++;
-                c=0;
-                i=j;
-                break;
-            }
-        }
-    }
-    bubbleSort(r,c);
     for(int i=0; i<c; i++){
         printf("%d", r[i]);
     }
