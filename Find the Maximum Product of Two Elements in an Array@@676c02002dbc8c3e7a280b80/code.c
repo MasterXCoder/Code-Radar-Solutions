@@ -24,7 +24,12 @@ int main(){
     bubbleSort(arr, n);
     for(int i=0; i<n; i++){
         printf("%d ", arr[i]);
-    } 
-    printf("%d", arr[n-2]*arr[n-1]);
+    }
+    if(arr[n-2]*arr[n-1]>0){
+        printf("%d", arr[n-2]*arr[n-1]);
+    }
+    else{
+         printf("%d", arr[0]*arr[1]);
+    }
     return 0;
 }
