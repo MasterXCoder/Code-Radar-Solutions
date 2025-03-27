@@ -6,7 +6,7 @@ int res(int a){
         x=x*10+a%10;
         a=a/10;
     }
-    return a;
+    return x;
 }
 int main(){
     int n;
@@ -16,6 +16,6 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(int j=0; j<n; j++){
-        printf("%d",res(arr[j]));
+        printf("%d ",res(arr[j]));
     }
 }
