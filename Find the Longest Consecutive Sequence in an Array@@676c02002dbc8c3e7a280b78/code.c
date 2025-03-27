@@ -25,7 +25,7 @@ int main(){
     val=1;
     int res[val];
     for(int i=0; i<n; i++){
-        if(arr[i]+1=arr[i+1]){
+        if(arr[i]+1==arr[i+1]){
             count++;
         }
         else{
