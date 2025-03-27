@@ -22,25 +22,20 @@ int main(){
         scanf("%d", &arr[i]);
     }
     bubbleSort(arr,n);
-    count=1;
-    val=1;
+    int count=0, val=0;
     int res[val];
     for(int i=0; i<n; i++){
-        if(arr[i]+1==arr[i+1]){
+        if(arr[i]==arr[i-1]+1){
             count++;
+            if(count>val){
+                val = count;
+            }
         }
         else{
-            res[val]=count;
             count=1;
-            val++;
         }
-        res[val] = count;
     }
-    bubbleSort(res,val);
-        for(int i=0; i<n; i++){
-        printf("%d_", res[i]);
-    }
-    printf("%d",res[val]);
+    printf("%d",val);
     return 0;
 }
 
