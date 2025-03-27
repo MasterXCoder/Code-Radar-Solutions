@@ -34,6 +34,7 @@ int main(){
             count=1;
             val++;
         }
+        res[val] = count;
     }
     bubbleSort(res,val);
         for(int i=0; i<n; i++){
