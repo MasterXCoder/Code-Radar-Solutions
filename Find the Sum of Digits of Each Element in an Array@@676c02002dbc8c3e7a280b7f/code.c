@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stlib.h>
+#include <math.h>
 
 int res(int a){
     int x=0;
@@ -7,7 +7,7 @@ int res(int a){
         x=x+a%10;
         a=a/10;
     }
-    return abs(x);
+    return fab(x);
 }
 int main(){
     int n;
