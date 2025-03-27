@@ -14,19 +14,21 @@ void bubbleSort(int arr[], int n) {
 }
 
 int main(){
-    int n;
-    scanf("%d",&n);
+    int n,c;
+    c=0;
+    scanf("%d", &n);
     int arr[n];
     for(int i=0; i<n; i++){
-        scanf("%d",&arr[i]);
+        scanf("%d", &arr[i]);
     }
-    bubbleSort(arr, n);
+    bubbleSort(arr,n);
     for(int i=0; i<n; i++){
-        for(int j=0; j<n; j++){
-            if(arr[i]>0 & (arr[i]+j!=arr[j])){
-                printf("%d",arr[i]+j);
-                return 0;
-            }
+        if(arr[i]==arr[i-1]+1){
+            count++;
+        }
+        else{
+            printf("%d",arr[i-1]+1);
+            return 0;
         }
     }
 }
