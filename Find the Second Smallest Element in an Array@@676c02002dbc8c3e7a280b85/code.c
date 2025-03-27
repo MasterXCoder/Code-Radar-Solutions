@@ -25,7 +25,6 @@ int main(){
     for(int j=1; j<n; j++){
         if(small==arr[j]){
             small=arr[j];
-            break;
         }
     }
     printf("%d",small);
