@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdio.lib>
+#include <stlib.h>
 
 int res(int a){
     int x=0;
