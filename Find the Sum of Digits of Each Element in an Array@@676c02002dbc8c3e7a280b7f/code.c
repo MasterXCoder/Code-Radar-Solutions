@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdio.lib>
 
 int res(int a){
     int x=0;
@@ -6,7 +7,7 @@ int res(int a){
         x=x+a%10;
         a=a/10;
     }
-    return x;
+    return abs(x);
 }
 int main(){
     int n;
