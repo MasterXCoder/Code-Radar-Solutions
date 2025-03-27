@@ -37,7 +37,7 @@ int main(){
         res[val] = count;
     }
     bubbleSort(res,val);
-    printf("%d",res[val-1]);
+    printf("%d",res[val]);
     return 0;
 }
 
