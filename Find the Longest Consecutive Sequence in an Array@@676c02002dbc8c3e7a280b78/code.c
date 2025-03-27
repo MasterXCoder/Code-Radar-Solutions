@@ -29,7 +29,7 @@ int main(){
             count++;
         }
         else{
-            arr[val]=count;
+            res[val]=count;
             count=0;
             val++;
         }
