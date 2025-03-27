@@ -22,7 +22,14 @@ int main(){
         scanf("%d", &arr[i]);
     } 
     bubbleSort(arr, n);
-
-    printf("%d", arr[n-2]*arr[n-1]);
+    int max=0;
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            if(max<arr[i]*arr[j]){
+                max<arr[i]*arr[j]
+            }
+        }
+    }
+    printf("%d",max);
     return 0;
 }
