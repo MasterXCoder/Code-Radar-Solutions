@@ -16,6 +16,5 @@ int main(){
         val=val*10+s%10;
         s=s/10;
     }
-    val==t? "YES":"NO";
-    printf("%d",s);
+    printf("%d", val==t? "YES":"NO");
 }
