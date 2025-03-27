@@ -3,7 +3,7 @@
 int res(int a){
     int x=0;
     while(a){
-        x=x*10+a%10;
+        x=a%10;
         a=a/10;
     }
     return x;
