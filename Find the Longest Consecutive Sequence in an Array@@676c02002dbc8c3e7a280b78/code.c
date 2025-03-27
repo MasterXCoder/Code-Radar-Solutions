@@ -22,6 +22,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
     bubbleSort(arr,n);
+    count=1;
     val=1;
     int res[val];
     for(int i=0; i<n; i++){
