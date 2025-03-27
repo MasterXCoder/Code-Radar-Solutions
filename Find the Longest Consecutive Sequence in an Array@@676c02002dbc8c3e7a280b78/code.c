@@ -36,6 +36,7 @@ int main(){
         }
     }
     printf("%d",val);
+    printf("%d",arr[-1]);
     return 0;
 }
 
