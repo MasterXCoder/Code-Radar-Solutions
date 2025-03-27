@@ -34,8 +34,8 @@ int main(){
             val++;
         }
     }
-    bubbleSort(res,b);
-    printf("%d",res[b-1]);
+    bubbleSort(res,val);
+    printf("%d",res[val-1]);
     return 0;
 }
 
