@@ -8,9 +8,14 @@ int main(){
         scanf("%d", &arr[i]);
     }
     int s=0,val=0;
-    for(int i=n; i>0; i--){
+    for(int i=0; i<n; i++){
         s=s*10+arr[i];
     }
-
+    int t=s;
+    while(s){
+        val=val*10+s%10;
+        s=s/10;
+    }
+    val==t? "YES":"NO";
     printf("%d",s);
 }
