@@ -7,7 +7,7 @@ int res(int a){
         x=x+a%10;
         a=a/10;
     }
-    return fab(x);
+    return fabs(x);
 }
 int main(){
     int n;
