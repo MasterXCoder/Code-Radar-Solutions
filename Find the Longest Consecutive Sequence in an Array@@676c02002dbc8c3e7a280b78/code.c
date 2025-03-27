@@ -22,7 +22,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
     bubbleSort(arr,n);
-    int count=0, val=0;
+    int count=0, val=1;
     int res[val];
     for(int i=0; i<n; i++){
         if(arr[i]==arr[i-1]+1){
