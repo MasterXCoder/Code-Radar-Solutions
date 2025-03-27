@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+int res(int a){
+    int x=0;
+    while(a){
+        x=x*10+a%10;
+        a=a/10;
+    }
+    return a;
+}
 int main(){
     int n;
     scanf("%d",&n);
@@ -8,6 +16,6 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(int j=0; j<n; j++){
-        printf("%d",arr[j]);
+        printf("%d",res(arr[j]));
     }
 }
