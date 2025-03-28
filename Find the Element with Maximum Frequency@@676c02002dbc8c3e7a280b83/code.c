@@ -31,10 +31,10 @@ int main(){
             }
         }
     }
-    int max=res[0],value=0;
+    int max=rem[0],value=0;
     for(int j=0; j<n; j++){
-        if(max<res[j]){
-            max=res[j];
+        if(max<rem[j]){
+            max=rem[j];
             value = j;
         }
     }
