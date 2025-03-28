@@ -32,7 +32,7 @@ int main(){
         }
     }
     int max=rem[0],value=0;
-    for(int j=0; j<n; j++){
+    for(int j=0; j<c; j++){
         if(max<rem[j]){
             max=rem[j];
             value = j;
