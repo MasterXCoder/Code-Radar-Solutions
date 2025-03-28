@@ -9,7 +9,7 @@ int main(){
     }
     if(n%2==0){
         s=arr[n/2]+arr[(n/2)-1];
-        printf("%d_%d_%d",arr[n/2],arr[(n/2)-1],s/2);
+        printf("%d",s/2);
     }
     else{
         s=arr[n/2];
