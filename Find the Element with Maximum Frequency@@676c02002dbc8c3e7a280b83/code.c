@@ -30,8 +30,14 @@ int main(){
                 val++;
             }
         }
-        printf("%d %d",rem[i],val);
-        printf("\n");
     }
+    int max=res[0],value=0;
+    for(int j=0; j<n; j++){
+        if(max<res[j]){
+            max=res[j];
+            value = j;
+        }
+    }
+    printf("%d",arr[value]);
     return 0;
 }
