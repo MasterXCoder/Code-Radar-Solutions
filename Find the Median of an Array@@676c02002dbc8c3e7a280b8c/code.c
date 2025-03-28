@@ -8,7 +8,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     if(n%2==0){
-        s=arr[n/2]+arr[(n/2)+1];
+        s=arr[n/2]+arr[(n/2)-1];
         printf("%d_%d_%d",arr[n/2],arr[(n/2)-1],s/2);
     }
     else{
