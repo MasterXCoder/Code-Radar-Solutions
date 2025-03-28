@@ -1,20 +1,18 @@
-#include <stdio.h>
-
+// Your code here...
+#include<stdio.h>
 int main(){
     int n;
-    scanf("%d", &n);
+    scanf("%d",&n);
     int arr[n];
-    for(int i=0; i<n; i++){
-        scanf("%d", &arr[i]);
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
     }
-    int s=0,val=0;
-    for(int i=0; i<n; i++){
-        s=s*10+arr[i];
+    for(int i=0;i<n;i++){
+        if(arr[i]!=arr[n-1-i]){
+            printf("NO");
+            return 0;
+
+        }
     }
-    int t=s;
-    while(s){
-        val=val*10+s%10;
-        s=s/10;
-    }
-    printf("%s", val==t? "YES":"NO");
+    printf("YES");
 }
