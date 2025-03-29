@@ -13,8 +13,8 @@ int main(){
         for(int j=0; j<n; j++){
             if(abs(arr[i]-arr[j])<min && arr[i]!=arr[j]){
                 min = abs(arr[i]-arr[j]);
-                val1 = arr[i];
-                val2 = arr[j];
+                val1 = arr[j];
+                val2 = arr[i];
             }
         }
     }
