@@ -28,17 +28,16 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    // Sort the array using bubble sort
+
     bubbleSort(arr, n);
 
-    int minDiff = abs(arr[1] - arr[0]);
+    int min = abs(arr[1] - arr[0]);
     int val1 = arr[0], val2 = arr[1];
 
-    // Find the pair with the minimum difference
     for (int i = 1; i < n - 1; i++) {
-        int diff = abs(arr[i + 1] - arr[i]);
-        if (diff < minDiff) {
-            minDiff = diff;
+        int val = abs(arr[i + 1] - arr[i]);
+        if (val < min) {
+            min = val;
             val1 = arr[i];
             val2 = arr[i + 1];
         }
