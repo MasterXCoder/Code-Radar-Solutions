@@ -6,7 +6,7 @@ int checker(int num){
         s=s*10+num%10;
         num=num/10;
     }
-    t==s? return 1:return 0;
+    (t==s)?(return 1):(return 0);
 }
 
 int main(){
