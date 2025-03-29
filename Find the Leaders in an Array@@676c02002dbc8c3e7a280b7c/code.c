@@ -9,12 +9,11 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    // Check for leaders using a nested loop
     for (int i = 0; i < n; i++) {
-        int isLeader = 1; // Assume current element is a leader
+        int isLeader = 1;
         for (int j = i + 1; j < n; j++) {
             if (arr[i] < arr[j]) {
-                isLeader = 0; // Not a leader if a greater element is found
+                isLeader = 0;
                 break;
             }
         }
