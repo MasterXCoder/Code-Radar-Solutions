@@ -18,7 +18,7 @@ int main(){
     scanf("%d", &n);
     int arr[n],dup[n];
     for(int i=0; i<n; i++){
-        scanf("%d", arr[i]);
+        scanf("%d", &arr[i]);
         dup[i] = arr[i];
     }
     sort(arr,n);
