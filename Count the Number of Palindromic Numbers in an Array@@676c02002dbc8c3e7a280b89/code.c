@@ -17,7 +17,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
     for(int i=0; i<n; i++){
-        if(arr[i]>0){
+        if(arr[i]>=0){
             count+=checker(arr[i]);
         }
     }
