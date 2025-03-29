@@ -8,10 +8,10 @@ int main(){
         scanf("%d", &arr[k]);
     }
     scanf("%d", &r);
-    int val=arr[i]+arr[j];
+    int val=0;
     for(int i=0; i<n; i++){
         for(int j=0; j<n; j++){
-            if(val==r && arr[i]>arr[j]){
+            if(arr[i]+arr[j]==r && arr[i]>arr[j]){
                 printf("%d %d\n",arr[i],arr[j])
             }
         }
