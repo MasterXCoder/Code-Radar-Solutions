@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main(){
-    int count=0,n,arr[n];
+    int n,arr[n];
+    static int count=0;
     scanf("%d", &n);
     for(int k=0; k<n; k++){
         scanf("%d", &arr[k]);
