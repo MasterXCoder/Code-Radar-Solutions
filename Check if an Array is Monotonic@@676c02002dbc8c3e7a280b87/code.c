@@ -24,10 +24,10 @@ int main(){
     sort(arr,n);
     int asc=0, des=0;
     for(int k=0; k<n; k++){
-        if(dup[i]==arr[i]){
+        if(dup[k]==arr[k]){
             asc+=1;
         }
-        else if(dup[i]==arr[n-i-1]){
+        else if(dup[k]==arr[n-k-1]){
             des+=1;
         }
     }
