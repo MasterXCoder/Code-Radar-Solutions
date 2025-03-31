@@ -10,7 +10,7 @@ int main(){
     static int count=0,val=0;
     for(int k=0; k<n; k++){
         if(count>1){
-            val=k;
+            val=k+1;
             break;
         }
         else{
