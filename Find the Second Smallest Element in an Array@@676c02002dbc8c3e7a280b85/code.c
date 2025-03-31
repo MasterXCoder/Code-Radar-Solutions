@@ -28,8 +28,8 @@ int main(){
         }
         c++;
     }
-    bubbleSort(arr, n);
-    int small=arr[1];
+    bubbleSort(res, c);
+    int small=res[1];
 
     printf("%d",small);
     return 0;
