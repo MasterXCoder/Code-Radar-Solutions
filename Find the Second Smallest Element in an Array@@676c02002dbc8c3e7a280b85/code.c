@@ -16,17 +16,16 @@ void bubbleSort(int arr[], int n) {
 int main() {
     int n, c = 0, val = 0;
     scanf("%d", &n);
-    int arr[n], res[n]; // Correctly declare res with size n
+    int arr[n], res[n];
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++){
         scanf("%d", &arr[i]);
     }
 
-    // Extract unique values
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++){
         val = 1;
-        for (int j = 0; j < c; j++) { // Corrected loop for checking duplicates
-            if (arr[i] == res[j]) {
+        for (int j = 0; j < c; j++){
+            if (arr[i] == res[j]){
                 val = 0;
                 break;
             }
@@ -37,12 +36,12 @@ int main() {
         }
     }
 
-    if (c < 2) {
-        printf("-1\n"); // Less than two unique values
+    if (c < 2){
+        printf("-1\n");
         return 0;
     }
 
     bubbleSort(res, c);
-    printf("%d\n", res[1]); // Second lowest unique value
+    printf("%d\n", res[1]);
     return 0;
 }
