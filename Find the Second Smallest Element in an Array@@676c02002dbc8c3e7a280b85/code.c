@@ -23,7 +23,7 @@ int main(){
     for(int i=0; i<n; i++){
         for(int j=i; j<n-i-1; j++){
             if(arr[i]!=arr[j]){
-                res[c]=arr[i]
+                res[c]=arr[i];
             }
         }
         c++;
