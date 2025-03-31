@@ -37,11 +37,11 @@ int main(){
     for(int i=1; i<n; i++){
         if(res[i]!=res[i-1]){
             printf("%d",small);
+            return 0;
         }
         else{
-            printf("-1");
+            printf("-1");    
+            return 0;
         }
     }
-    
-    return 0;
 }
