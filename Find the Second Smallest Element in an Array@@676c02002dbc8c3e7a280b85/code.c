@@ -23,7 +23,7 @@ int main(){
     for(int i=0; i<n; i++){
         val=1;
         for(int j=i; j<c; j++){
-            if(arr[i]=arr[j]){
+            if(arr[i]==arr[j]){
                 val=0;
             }
         }
