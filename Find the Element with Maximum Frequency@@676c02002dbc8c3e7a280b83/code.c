@@ -1,43 +1,29 @@
 #include <stdio.h>
 
-int main(){
-    int n,val;
-    scanf("%d",&n);
+int main() {
+    int n;
+    scanf("%d", &n);
     int arr[n];
-    for(int k=0; k<n; k++){
-        scanf("%d",&arr[k]);
+    for (int k = 0; k < n; k++) {
+        scanf("%d", &arr[k]);
     }
-    int rem[n];
-    int c=0;
-    int unique;
-    for(int r=0; r<n; r++){
-        unique = 1;
-        for(int t=0; t<c; t++){
-            if(rem[t] == arr[r]){
-                unique = 0;
-                break;
-            } 
-        }
-        if(unique){
-            rem[c]=arr[r];
-            c++;
-        } 
-        }
-    for(int i=0; i<c; i++){
-        val = 0;
-        for(int j=0; j<n; j++){
-            if(rem[i]==arr[j]){
-                val++;
+
+    int maxFrequency = 0;
+    int maxElement = arr[0];
+
+    for (int i = 0; i < n; i++) {
+        int count = 1; // Count starts at 1 for the current element
+        for (int j = i + 1; j < n; j++) {
+            if (arr[i] == arr[j]) {
+                count++;
             }
         }
-    }
-    int max=rem[0],value=0;
-    for(int j=0; j<c; j++){
-        if(max<rem[j]){
-            max=rem[j];
-            value = j;
+        if (count > maxFrequency) {
+            maxFrequency = count;
+            maxElement = arr[i];
         }
     }
-    printf("%d",arr[value]);
+
+    printf("%d\n", maxElement);
     return 0;
 }
