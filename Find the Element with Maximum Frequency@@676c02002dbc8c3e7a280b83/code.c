@@ -9,7 +9,7 @@ int main() {
     }
 
     int maxFrequency = 0;
-    int maxElement = arr[0];
+    int max = arr[0];
 
     for (int i = 0; i < n; i++) {
         int count = 1;
