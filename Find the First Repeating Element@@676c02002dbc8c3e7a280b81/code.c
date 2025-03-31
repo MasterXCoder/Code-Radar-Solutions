@@ -12,7 +12,7 @@ int main() {
         for (int j = i + 1; j < n; j++) {
             if (arr[i] == arr[j]) {
                 printf("%d", arr[i]);
-                return 0; // Print the first repeating number and exit
+                return 0;
             }
         }
     }
