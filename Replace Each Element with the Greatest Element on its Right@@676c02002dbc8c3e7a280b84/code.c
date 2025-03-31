@@ -1,24 +1,30 @@
 #include <stdio.h>
 
-int main(){
+int main() {
     int n;
     scanf("%d", &n);
     int arr[n];
-    for(int i=0; i<n; i++){
-        scanf("%d",&arr[i]);
+    
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    int max=arr[0];
-    int res=0;
-    for(int i=0; i<n; i++){
-        for(int j=i; j<n; j++){
-            if(arr[j]>max){
-                max=arr[j];
-            }
+
+    int maxRight = -1; // Initialize the last element to -1
+    int temp;
+
+    // Traverse from right to left
+    for (int i = n - 1; i >= 0; i--) {
+        temp = arr[i];
+        arr[i] = maxRight;
+        if (temp > maxRight) {
+            maxRight = temp;
         }
-        for(int k=max; k>i; k--){
-            printf("%d ",max);
-        }
-        i=2;
     }
-    printf("-1");
+
+    // Output the modified array
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    
+    return 0;
 }
