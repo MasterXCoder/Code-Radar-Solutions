@@ -21,7 +21,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
     for(int i=0; i<n; i++){
-        val=1
+        val=1;
         for(int j=i; j<n-i-1; j++){
             if(arr[i]=arr[j]){
                 val=0;
