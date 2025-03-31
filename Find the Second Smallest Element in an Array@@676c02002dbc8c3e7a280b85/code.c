@@ -34,7 +34,14 @@ int main(){
     }
     bubbleSort(res, c);
     int small=res[1];
-
-    printf("%d",small);
+    for(int i=1; i<n; i++){
+        if(rem[i]!=rem[i-1]){
+            printf("%d",small);
+        }
+        else{
+            printf("-1");
+        }
+    }
+    
     return 0;
 }
