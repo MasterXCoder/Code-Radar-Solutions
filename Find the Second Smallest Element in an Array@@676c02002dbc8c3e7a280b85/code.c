@@ -30,8 +30,8 @@ int main(){
     }
     bubbleSort(res, c);
     int small=res[1];
-        for(int i=0; i<n; i++){
-        scanf("%d_\n", arr[i]);
+    for(int i=0; i<n; i++){
+        printf("%d_\n", arr[i]);
     }
 
     printf("%d",small);
