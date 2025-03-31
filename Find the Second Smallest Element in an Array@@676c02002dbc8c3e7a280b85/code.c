@@ -14,12 +14,20 @@ void bubbleSort(int arr[], int n) {
 }
 
 int main(){
-    int n;
+    int n,c=0;
     scanf("%d", &n);
-    int arr[n];
+    int arr[n], res[c];
     for(int i=0; i<n; i++){
         scanf("%d", &arr[i]);
-    } 
+    }
+    for(int i=0; i<n; i++){
+        for(int j=i; j<n-i-1; j++){
+            if(arr[i]!=arr[j]){
+                res[c]=arr[i]
+            }
+        }
+        c++;
+    }
     bubbleSort(arr, n);
     int small=arr[1];
 
