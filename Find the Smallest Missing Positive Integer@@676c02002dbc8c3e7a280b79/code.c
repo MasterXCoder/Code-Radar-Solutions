@@ -13,28 +13,27 @@ void bubbleSort(int arr[], int n) {
     }
 }
 
-int main(){
-    int n,c;
-    c=0;
+int main() {
+    int n;
     scanf("%d", &n);
     int arr[n];
-    for(int i=0; i<n; i++){
+    for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    bubbleSort(arr,n);
-    for(int i=0; i<n; i++){
-        if(arr[i]>0){
-            if(arr[i]==arr[i-1]+1){
-                continue;
-            }
-            else if(arr[n-1]==arr[i-1]){
-                printf("%d",arr[n-1]+1);
-            }
-            else{
-                printf("%d",arr[i-1]+1);
-                return 0;
+
+    bubbleSort(arr, n);
+
+    int smallest = 1; // Start from 1
+    for (int i = 0; i < n; i++) {
+        if (arr[i] > 0) {
+            if (arr[i] == smallest) {
+                smallest++; // Keep incrementing if it matches
+            } else if (arr[i] > smallest) {
+                break; // Break on finding a gap
             }
         }
     }
-    printf("1");
+
+    printf("%d\n", smallest);
+    return 0;
 }
