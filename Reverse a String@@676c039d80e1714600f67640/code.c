@@ -5,5 +5,5 @@ int main(){
     char word[30];
     scanf("%s",word);
     
-    printf("%s",strsep(word));
+    printf("%s",strrev(word));
 }
