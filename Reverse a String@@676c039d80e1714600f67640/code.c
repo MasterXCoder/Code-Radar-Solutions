@@ -4,6 +4,6 @@
 int main(){
     char word[30];
     scanf("%s",word);
-    strrev(word);
-    printf("%s",word);
+    
+    printf("%s",strrev(word));
 }
