@@ -4,6 +4,6 @@
 int main(){
     char word[30];
     scanf("%s",word);
-    char val[30] = strrev(word);
-    printf("%s",val);
+    int n = sizeof(arr)/sizeof(arr[0]);
+    printf("%s",word[i]);
 }
