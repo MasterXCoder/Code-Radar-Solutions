@@ -4,6 +4,6 @@
 int main(){
     char word[30];
     scanf("%s",word);
-    
-    printf("%s",strrev(word));
+    char val[30] = strrev(word);
+    printf("%s",val);
 }
