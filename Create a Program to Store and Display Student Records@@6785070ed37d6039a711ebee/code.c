@@ -1,11 +1,13 @@
 #include <stdio.h>
 
-int main(){
-    struct prog{
+struct prog{
         int roll;
         char name[25];
         float mark;
-    };
+};
+
+int main(){
+
     int n;
     scanf("%d",&n);
     struct prog s[n];
