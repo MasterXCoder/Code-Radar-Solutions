@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 struct prog{
-        int roll;
-        char name[25];
-        float mark;
+    int roll;
+    char name[25];
+    float mark;
 };
 
 int main(){
