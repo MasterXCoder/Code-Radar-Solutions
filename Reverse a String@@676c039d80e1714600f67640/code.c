@@ -6,6 +6,6 @@ int main(){
     scanf("%s",word);
     int n = sizeof(word)/sizeof(word[0]);
     for(int i=n; i>0; i--){
-    printf("%s",word[i]);
+        printf("%s",word[i]);
     }
 }
